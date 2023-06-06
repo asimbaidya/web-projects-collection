@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🕶</title>
+
+  <style>
+    html {
+      font-family: Inter, sans-serif;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    .cnt {
+      max-width: 800px;
+      margin: auto;
+      position: relative;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    #theme-toggler {
+      align-items: center;
+      border-radius: 50%;
+      border: 1px solid coral;
+      cursor: pointer;
+      display: inline-flex;
+      height: 2em;
+      justify-content: center;
+      position: absolute;
+      right: 1em;
+      top: 1em;
+      transition: box-shadow 0.2s ease-in-out;
+      user-select: none;
+      width: 2em;
+    }
+
+    #theme-toggler:hover {
+      box-shadow: 0 0 0 0.2em coral;
+    }
+
+    #theme-toggler:active {
+      box-shadow: 0 0 0 1em coral;
+    }
+
+    .dark {
+      color: #fff;
+      background-color: #000;
+    }
+
+    #tone {
+      background: coral;
+      padding: 0 0.5rem;
+      border-radius: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cnt">
+    <h1>The Site For 🍓 & <span id="tone">Cakes</span></h1>
+    <span id="theme-toggler">️🌞</span>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil cum ullam
+      fuga nemo, omnis odit laboriosam rem itaque corporis accusantium, id
+      dicta incidunt a? Soluta illo modi, odio tempora quis id nihil
+      necessitatibus voluptatem quasi nulla eum laudantium excepturi
+      doloremque. Voluptatum, enim excepturi! Veritatis rerum, autem non
+      repellendus error voluptatem adipisci cumque, quaerat nam cum
+      accusantium. Optio voluptatibus voluptatem, necessitatibus minima eum
+      provident eaque ipsum tempore, quisquam, in repudiandae. Minus iusto nam
+      aut quia numquam, ea fuga iure et inventore ullam enim. Tempore vel,
+      repellendus itaque dolorem repellat eaque labore iure amet at tempora
+      quaerat consequuntur non, aspernatur voluptatem similique!
+    </p>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+      minima incidunt molestias nemo iure nam soluta dolor voluptate, ab rerum
+      maiores corporis excepturi voluptates debitis dignissimos eos recusandae
+      sed similique voluptatem provident. Laborum nulla eaque blanditiis
+      aperiam dignissimos dicta laudantium!
+    </p>
+  </div>
+  <!---->
+  <script>
+    (() => {
+      const themeToggler = document.getElementById("theme-toggler");
+      addEventListener("click", () => {
+        // toggle .dark class on body on click on theme toggler
+        document.body.classList.toggle("dark");
+
+        // change theme toggler emoji to indicate the current theme
+        themeToggler.textContent = document.body.classList.contains("dark")
+          ? "🌙"
+          : "🌞";
+      });
+    })();
+  </script>
+</body>
+
+</html>

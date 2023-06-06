@@ -4,6 +4,8 @@ small codes that does specific things
 
 ## 2023
 
+- [[1] simple dark-mode](./2023/web-htmlcss-darkmode)
+
 ## 2022
 
 - [[2] kanagawa color flipper ](./2022/web-kanagawa-color-flip-on-click)
